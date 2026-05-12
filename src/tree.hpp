@@ -3,9 +3,9 @@
 
 #include<iostream>
 #include<vector>
-#include <time.h>
-#include <stdlib.h>
-#include"grid.h"
+#include<time.h>
+#include<stdlib.h>
+#include"grid.hpp"
 
 #define STEPS_AHEAD 4 //how many steps ahead are we looking
 
@@ -14,14 +14,14 @@ class tree_node{
         Grid *root_node;
     public:
         tree_node(Grid *root) {root_node = root;}
-		~tree_node() {
-			free(root_node);
-			for ( int i = 0; i < children.size(); i++ )
-				free( children[i] );
-		}
+        ~tree_node() {
+            free(root_node);
+            for ( int i = 0; i < children.size(); i++ )
+                free( children[i] );
+        }
         std::vector<tree_node *> children;
         void MakeTree(bool udlr);
-		Grid *root() { return root_node; }
+        Grid *root() { return root_node; }
         void MakeChildrenUDLR();
         void MakeChildrenRand2();
 };

@@ -2,7 +2,7 @@
 #define IDS_HPP
 
 #include <utility>
-#include "grid.h"
+#include "grid.hpp"
 #include "tree.hpp"
 using namespace std;
 

@@ -48,6 +48,6 @@ void tree_node::MakeChildrenUDLR(){
 void tree_node::MakeChildrenRand2(){
     for(int i = 0; i < 4; i++){
         Grid * temp = root_node->addBlock(i);
-        if(temp != NULL) children.push_back(new tree_node(temp)); 
+        if(temp != NULL) children.push_back(new tree_node(temp));
     }
 }
