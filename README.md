@@ -13,3 +13,4 @@ Simple run `make` to build the executable, then `./main` to begin running the al
 print a bunch of debug information, mainly what the potential look-ahead states are, the boards value, turn number,
 etc. Until it eventually ends in either a `winner winner chicken dinner` or a `you failed, badly`. Each turn is also
 written to `ai.output`, showing the game board proceeded by the AI's move (`u|d|l|r`) and the highest number on the board.
+The move/number pair is also written to `tzfe.csv` (though, this was left as an unused TODO for possible playback using Processing)
